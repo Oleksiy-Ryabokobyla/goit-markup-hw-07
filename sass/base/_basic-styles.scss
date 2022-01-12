@@ -1,0 +1,25 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+}
+
+/* class for hidding elements visualy  */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
