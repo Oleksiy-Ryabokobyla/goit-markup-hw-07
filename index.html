@@ -377,7 +377,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-left-part">
-          <a href="" class="logo logo--footer"
+          <a href="" class="logo footer__logo"
             ><span class="logo__left-part">Web</span>Studio</a
           >
           <address class="footer-address-box">
@@ -475,54 +475,54 @@
       </div>
     </footer>
     <!--          modal window markup          -->
-    <div class="modal-backdrop is-hidden" data-modal>
+    <div class="modal-backdrop modal-backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          &#xd7;
-        </button>
-        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <button type="button" class="close-btn" data-modal-close>&#xd7;</button>
+        <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
         <form>
-          <label class="form-input-box">
+          <label class="form">
             Имя
-            <input type="text" class="form-input" name="name" />
-            <svg class="form-input-icon" width="13px" height="13px">
+            <input type="text" class="form__input" name="name" />
+            <svg class="form__icon" width="13px" height="13px">
               <use href="./images/sprite.svg#icon-human"></use>
             </svg>
           </label>
-          <label class="form-input-box">
+          <label class="form">
             Телефон
-            <input type="tel" class="form-input" name="phone-number" />
-            <svg class="form-input-icon" width="13px" height="13px">
+            <input type="tel" class="form__input" name="phone-number" />
+            <svg class="form__icon" width="13px" height="13px">
               <use href="./images/sprite.svg#icon-handset"></use>
             </svg>
           </label>
-          <label class="form-input-box">
+          <label class="form">
             Почта
-            <input type="email" class="form-input" name="email-address" />
-            <svg class="form-input-icon" width="13px" height="13px">
+            <input type="email" class="form__input" name="email-address" />
+            <svg class="form__icon" width="13px" height="13px">
               <use href="./images/sprite.svg#icon-mail"></use>
             </svg>
           </label>
-          <label class="form-input-box">
+          <label class="form form--textarea">
             Комментарий
             <textarea
               name="comment"
-              class="form-comment"
+              class="form__comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label for="policy-input" class="policy-box">
+          <label for="policy-input" class="policy">
             <input
               type="checkbox"
               name="policy-checkbox"
               id="policy-input"
-              class="policy-input"
+              class="policy__input"
             />
-            <span class="policy-checkbox"></span>
+            <span class="policy__checkbox"></span>
             Соглашаюсь с рассылкой и принимаю &nbsp;
-            <a href="www.google.com" class="policy-link">Условия договора</a>
+            <a href="#" class="policy__link">Условия договора</a>
           </label>
-          <button type="submit" class="form-submit-btn">Отправить</button>
+          <button type="submit" class="submit-btn submit-btn--modal">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
