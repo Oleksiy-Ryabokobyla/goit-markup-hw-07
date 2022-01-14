@@ -4,13 +4,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* class for hidding elements visualy  */
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .container {
@@ -22,4 +19,13 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* class for hidding elements visualy  */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
