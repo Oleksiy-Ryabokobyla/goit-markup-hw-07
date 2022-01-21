@@ -1,18 +1,4 @@
 .team {
-  background-color: var(--light-background-color);
-}
-
-.team__title {
-  margin-bottom: 50px;
-
-  color: var(--title-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.team__cardset {
   display: flex;
   flex-wrap: wrap;
 }
@@ -35,7 +21,7 @@
   background-color: var(--main-white-color);
 }
 
-.team__subtitle {
+.team__title {
   margin-bottom: 10px;
 
   color: var(--title-color);

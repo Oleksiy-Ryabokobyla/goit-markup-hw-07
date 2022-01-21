@@ -3,22 +3,17 @@
   padding: 60px 0;
 }
 
-.footer > .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-left-part {
   margin-right: 70px;
   flex-grow: 1;
 }
 
 //footer address block
-.footer-address-box {
+.address-box {
   margin-top: 20px;
 }
 
-.footer-address__link {
+.address__link {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -39,7 +34,7 @@
   }
 }
 
-.footer-address__item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 /* footer socials block */

@@ -32,9 +32,37 @@ img {
   padding: 0 15px;
 }
 
+.container--footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section--no_padding_top {
+  padding-top: 0;
+}
+
+.section--other_background {
+  background-color: var(--light-background-color);
+}
+
+.section__title {
+  margin-bottom: 50px;
+  color: var(--title-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* class for hidding elements visualy  */
@@ -481,7 +509,7 @@ summary {
   border-bottom: 1px solid var(--header-underline-color);
 }
 
-.header > .container {
+.header__container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -610,7 +638,7 @@ summary {
   color: var(--brand-color);
 }
 
-.hero-section {
+.hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -624,12 +652,9 @@ summary {
   margin: 0 auto;
 }
 
-.hero {
+.hero__title {
   width: 700px;
   margin: 0 auto;
-}
-
-.hero__title {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
@@ -706,7 +731,7 @@ summary {
           border-radius: 4px;
 }
 
-.benefits__subtitle {
+.benefits__title {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--title-color);
@@ -720,20 +745,7 @@ summary {
   line-height: 1.8;
 }
 
-.about.section {
-  padding-top: 0;
-}
-
-.about__title {
-  margin-bottom: 50px;
-  color: var(--title-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.about__cardset {
+.about {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -766,19 +778,6 @@ summary {
 }
 
 .team {
-  background-color: var(--light-background-color);
-}
-
-.team__title {
-  margin-bottom: 50px;
-  color: var(--title-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.team__cardset {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -807,7 +806,7 @@ summary {
   background-color: var(--main-white-color);
 }
 
-.team__subtitle {
+.team__title {
   margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 500;
@@ -821,20 +820,6 @@ summary {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-}
-
-.clients-section {
-  padding: 69px 0 94px;
-}
-
-.clients-section__title {
-  font-size: 36px;
-  font-weight: bold;
-  color: var(--solid-black-color);
-  letter-spacing: 0.03em;
-  line-height: 42px;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .clients {
@@ -911,17 +896,6 @@ summary {
   padding: 60px 0;
 }
 
-.footer > .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer-left-part {
   margin-right: 70px;
   -webkit-box-flex: 1;
@@ -930,11 +904,11 @@ summary {
           flex-grow: 1;
 }
 
-.footer-address-box {
+.address-box {
   margin-top: 20px;
 }
 
-.footer-address__link {
+.address__link {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -951,15 +925,15 @@ summary {
           transition-timing-function: var(--timing-function);
 }
 
-.footer-address__link:hover, .footer-address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--brand-color);
 }
 
-.footer-address__link--white {
+.address__link--white {
   color: var(--main-white-color);
 }
 
-.footer-address__item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -1455,7 +1429,7 @@ summary {
   color: var(--main-white-color);
 }
 
-.product__name {
+.product__title {
   color: var(--title-color);
   font-size: 17px;
   font-weight: 700;
